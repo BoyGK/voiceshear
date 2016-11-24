@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="#eeeeee"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@drawable/top_white_box"
+        android:layout_height="3dp"/>
+
+    <com.shuyu.gsyvideoplayer.video.StandardGSYVideoPlayer
+        android:layout_width="fill_parent"
+               android:id="@+id/video_main_"
+               android:visibility="gone"
+               android:background="@null"
+               android:layout_height="215dp"/>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:visibility="visible"
+                    android:id="@+id/video_layout"
+                    android:layout_height="215dp">
+        <ImageView android:layout_width="match_parent"
+                   android:id="@+id/video_main"
+                   android:clickable="true"
+                   android:layout_height="match_parent"/>
+
+        <TextView android:layout_width="match_parent"
+                  android:textColor="#ffffff"
+                  android:textSize="25sp"
+                  android:id="@+id/video_title"
+                  android:layout_margin="15dp"
+                  android:layout_height="wrap_content"/>
+
+        <ImageView android:layout_width="50dp"
+                   android:src="@drawable/play_video"
+                   android:layout_height="50dp"
+                   android:layout_centerVertical="true"
+                   android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="match_parent"
+                   android:background="#ffffff"
+                  android:layout_height="45dp">
+
+        <ImageView android:layout_width="40dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="5dp"
+                   android:layout_marginBottom="5dp"
+
+                   android:layout_height="match_parent" android:id="@+id/main_data_userImage"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:id="@+id/main_data_userName"
+                  android:textColor="#727272"
+                  android:gravity="center_vertical"
+                  android:textSize="15dp"
+                  android:layout_height="match_parent"
+                  android:layout_toEndOf="@+id/main_data_userImage"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:id="@+id/main_data_date"
+                  android:gravity="center_vertical"
+                  android:textSize="15sp"
+                  android:textColor="#727272"
+                  android:layout_marginRight="10dp"
+                  android:layout_toLeftOf="@+id/news_image"
+                  android:layout_height="match_parent"/>
+
+        <ImageView android:layout_width="50dp"
+                   android:clickable="true"
+                   android:id="@+id/news_image"
+                   android:src="@drawable/news_bt_bg"
+                   android:layout_height="match_parent"
+                   android:layout_marginTop="5dp"
+                   android:layout_marginBottom="5dp"
+                   android:layout_marginRight="25dp"
+                   android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@drawable/collects_"
+        android:layout_height="5dp"/>
+
+</LinearLayout>

@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/up_video_LinearLayout"
+        android:background="#eeeeee"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView android:layout_width="match_parent"
+                  android:text="个人"
+                  android:gravity="center"
+                  android:background="#19b4ff"
+                  android:textSize="25dp"
+                  android:textColor="#ffffff"
+                  android:layout_height="50dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="@drawable/bottom_title_box"
+            android:layout_height="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="@drawable/top_white_box"
+            android:layout_height="5dp"/>
+
+        <ScrollView android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="vertical"
+                          android:layout_height="match_parent">
+
+                <RelativeLayout android:layout_width="match_parent"
+                                android:clickable="true"
+                                android:id="@+id/self_user_main"
+                                android:background="@drawable/collects_listview_bg"
+                              android:layout_height="100dp">
+                    <ImageView android:layout_width="65dp"
+                               android:layout_margin="15dp"
+                               android:layout_height="65dp"
+                                android:clickable="true"
+                               android:id="@+id/self_user_image"/>
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:orientation="vertical"
+                                  android:layout_toEndOf="@+id/self_user_image"
+                                  android:layout_toStartOf="@+id/self_user_sign_day"
+                                  android:layout_height="match_parent">
+                        <LinearLayout android:layout_width="match_parent"
+                                      android:orientation="horizontal"
+                                      android:layout_weight="2"
+                                      android:layout_height="match_parent">
+                            <TextView android:layout_width="wrap_content"
+                                      android:text="gkpoter"
+                                      android:id="@+id/self_user_Name"
+                                      android:textSize="25sp"
+                                      android:gravity="center"
+                                      android:textColor="#4a4a4a"
+                                      android:layout_height="match_parent"/>
+                            <LinearLayout android:layout_width="35dp"
+                                          android:orientation="vertical"
+                                          android:gravity="center"
+                                          android:layout_marginLeft="5dp"
+                                          android:layout_height="match_parent">
+                                <ImageView android:layout_width="match_parent"
+                                           android:layout_gravity="center"
+                                           android:background="@drawable/user_top"
+                                           android:layout_height="8dp"/>
+                                <TextView android:layout_width="match_parent"
+                                          android:id="@+id/self_user_level"
+                                          android:background="#fff987"
+                                          android:gravity="center"
+                                          android:textStyle="bold"
+                                          android:textColor="#ff9211"
+                                          android:textSize="10sp"
+                                          android:layout_height="12dp"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <TextView android:layout_width="match_parent"
+                                  android:layout_weight="3"
+                                  android:id="@+id/self_user_signature"
+                                  android:textStyle="italic"
+                                  android:textColor="#515151"
+                                  android:textSize="13sp"
+                                  android:transitionName="shareNames"
+                                  android:layout_height="match_parent"/>
+                    </LinearLayout>
+
+                    <Button android:layout_width="50dp"
+                            android:text="签到"
+                            android:textColor="#ffffff"
+                            android:background="@drawable/button_log"
+                            android:layout_marginTop="35dp"
+                            android:layout_marginBottom="35dp"
+                            android:layout_marginRight="35dp"
+                            android:id="@+id/self_user_sign_day"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+                <TextView android:layout_width="match_parent"
+                          android:background="@drawable/collects_"
+                          android:layout_height="15dp"/>
+
+                <RelativeLayout android:layout_width="match_parent"
+                                android:clickable="true"
+
+                                android:id="@+id/self_information"
+                                android:background="@drawable/collects_listview_bg"
+                                android:layout_height="55dp">
+                    <ImageView android:layout_width="55dp"
+                               android:src="@drawable/news_self"
+                               android:layout_margin="5dp"
+                               android:layout_height="match_parent"
+                               android:id="@+id/self_news_push"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:text="消息通知"
+                              android:textSize="15dp"
+                              android:gravity="center"
+                              android:textColor="#3d3d3d"
+                              android:layout_height="match_parent"
+                              android:layout_toEndOf="@+id/self_news_push"/>
+                    <ImageView android:layout_width="50dp"
+                               android:layout_marginRight="25dp"
+                               android:layout_marginTop="15dp"
+                               android:layout_marginBottom="15dp"
+                               android:src="@drawable/go"
+                               android:layout_height="match_parent"
+                               android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+                <TextView android:layout_width="match_parent"
+                          android:background="@drawable/collects_"
+                          android:layout_height="5dp"/>
+
+                <RelativeLayout android:layout_width="match_parent"
+                                android:clickable="true"
+                                android:visibility="visible"
+
+                                android:id="@+id/self_up_uservideo"
+                                android:background="@drawable/collects_listview_bg"
+                                android:layout_height="55dp">
+                    <ImageView android:layout_width="55dp"
+                               android:src="@drawable/up_video"
+                               android:layout_margin="5dp"
+                               android:layout_height="match_parent"
+                               android:id="@+id/self_news_up"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:text="上传视频"
+                              android:textSize="15dp"
+                              android:gravity="center"
+                              android:textColor="#3d3d3d"
+                              android:layout_height="match_parent"
+                              android:layout_toEndOf="@+id/self_news_up"/>
+                    <ImageView android:layout_width="50dp"
+                               android:layout_marginRight="25dp"
+                               android:layout_marginTop="15dp"
+                               android:layout_marginBottom="15dp"
+                               android:src="@drawable/go"
+                               android:layout_height="match_parent"
+                               android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent"
+                                android:clickable="true"
+                                android:visibility="gone"
+                                android:id="@+id/self_up_uservideo_progressbar"
+                                android:background="@drawable/collects_listview_bg"
+                                android:layout_height="55dp">
+
+                    <ProgressBar android:layout_width="match_parent"
+                                 android:id="@+id/up_uservideo_progressbar"
+                                 style="?android:attr/progressBarStyleHorizontal"
+                                 android:max="100"
+                                 android:progress="0"
+                                 android:layout_height="55dp" android:indeterminate="false"/>
+
+                </RelativeLayout>
+                <TextView android:layout_width="match_parent"
+                          android:background="@drawable/collects_"
+                          android:layout_height="5dp"/>
+
+                <RelativeLayout android:layout_width="match_parent"
+                                android:clickable="true"
+
+                                android:id="@+id/self_mysterious_"
+                                android:background="@drawable/collects_listview_bg"
+                                android:layout_height="55dp">
+                    <ImageView android:layout_width="55dp"
+                               android:src="@drawable/self_mysterious"
+                               android:layout_margin="5dp"
+                               android:layout_height="match_parent"
+                               android:id="@+id/self_to_somewhere"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:text="神秘链接"
+                              android:textSize="15dp"
+                              android:gravity="center"
+                              android:textColor="#3d3d3d"
+                              android:layout_height="match_parent"
+                              android:layout_toEndOf="@+id/self_to_somewhere"/>
+                    <ImageView android:layout_width="50dp"
+                               android:layout_marginRight="25dp"
+                               android:layout_marginTop="15dp"
+                               android:layout_marginBottom="15dp"
+                               android:src="@drawable/go"
+                               android:layout_height="match_parent"
+                               android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+                <TextView android:layout_width="match_parent"
+                          android:background="@drawable/collects_"
+                          android:layout_height="5dp"/>
+
+                <RelativeLayout android:layout_width="match_parent"
+                                android:clickable="true"
+
+                                android:id="@+id/self_news_Back_saying"
+                                android:background="@drawable/collects_listview_bg"
+                                android:layout_height="55dp">
+                    <ImageView android:layout_width="55dp"
+                               android:src="@drawable/back_news"
+                               android:layout_margin="5dp"
+                               android:layout_height="match_parent"
+                               android:id="@+id/self_back_saying"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:text="反馈"
+                              android:textSize="15dp"
+                              android:gravity="center"
+                              android:textColor="#3d3d3d"
+                              android:layout_height="match_parent"
+                              android:layout_toEndOf="@+id/self_back_saying"/>
+                    <ImageView android:layout_width="50dp"
+                               android:layout_marginRight="25dp"
+                               android:layout_marginTop="15dp"
+                               android:layout_marginBottom="15dp"
+                               android:src="@drawable/go"
+                               android:layout_height="match_parent"
+                               android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+                <TextView android:layout_width="match_parent"
+                          android:background="@drawable/collects_"
+                          android:layout_height="5dp"/>
+
+                <RelativeLayout android:layout_width="match_parent"
+                                android:clickable="true"
+
+                                android:id="@+id/self_to_about"
+                                android:background="@drawable/collects_listview_bg"
+                                android:layout_height="55dp">
+                    <ImageView android:layout_width="55dp"
+                               android:src="@drawable/about_logo"
+                               android:layout_marginLeft="5dp"
+                               android:layout_marginRight="5dp"
+                               android:alpha="0.5"
+                               android:layout_height="match_parent"
+                               android:id="@+id/self_about"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:text="关于"
+                              android:textSize="15dp"
+                              android:gravity="center"
+                              android:textColor="#3d3d3d"
+                              android:layout_height="match_parent"
+                              android:layout_toEndOf="@+id/self_about"/>
+                    <ImageView android:layout_width="50dp"
+                               android:layout_marginRight="25dp"
+                               android:layout_marginTop="15dp"
+                               android:layout_marginBottom="15dp"
+                               android:src="@drawable/go"
+                               android:layout_height="match_parent"
+                               android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+                <TextView android:layout_width="match_parent"
+                          android:background="@drawable/collects_"
+                          android:layout_height="6dp"/>
+                <TextView android:layout_width="match_parent"
+                          android:background="#eeeeee"
+                          android:layout_height="4dp"/>
+
+                <RelativeLayout android:layout_width="match_parent"
+                                android:clickable="true"
+
+                                android:id="@+id/self_setting"
+                                android:background="@drawable/collects_listview_bg"
+                                android:layout_height="55dp">
+                    <ImageView android:layout_width="55dp"
+                               android:src="@drawable/settingicon"
+                               android:layout_marginLeft="5dp"
+                               android:layout_marginTop="10dp"
+                               android:layout_marginBottom="10dp"
+                               android:layout_marginRight="5dp"
+                               android:layout_height="match_parent"
+                               android:id="@+id/self_option"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:text="设置"
+                              android:textSize="15dp"
+                              android:gravity="center"
+                              android:textColor="#3d3d3d"
+                              android:layout_height="match_parent"
+                              android:layout_toEndOf="@+id/self_option"/>
+                    <ImageView android:layout_width="50dp"
+                               android:layout_marginRight="25dp"
+                               android:layout_marginTop="15dp"
+                               android:layout_marginBottom="15dp"
+                               android:src="@drawable/go"
+                               android:layout_height="match_parent"
+                               android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+                <TextView android:layout_width="match_parent"
+                          android:background="@drawable/collects_"
+                          android:layout_height="6dp"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:id="@+id/up_video_bg"
+        android:layout_height="match_parent"></RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:id="@+id/up_video_RelativeLayout"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:background="#eeeeee"
+            android:id="@+id/up_video_RelativeLayout_"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_height="145dp">
+
+            <TextView
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:text="编辑视频标题"
+                android:textColor="#515151"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:id="@+id/up_video_title"
+                android:layout_height="45dp"/>
+
+            <EditText
+                android:layout_below="@+id/up_video_title"
+                android:layout_width="match_parent"
+                android:textSize="16sp"
+                android:textColor="#515151"
+                android:hint="请不要超过10个字"
+                android:textColorHint="#515151"
+                android:id="@+id/up_video_edit_title"
+                android:paddingLeft="15dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:layout_height="55dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_below="@+id/up_video_edit_title"
+                android:layout_height="match_parent">
+                <Button
+                    android:layout_width="match_parent"
+                    android:text="取消"
+                    android:background="@drawable/select_quit_ok"
+                    android:id="@+id/up_video_quit"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="#19b4ff"
+                    android:layout_height="match_parent"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:text="确定"
+                    android:background="@drawable/select_quit_ok"
+                    android:id="@+id/up_video_ok"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="#19b4ff"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

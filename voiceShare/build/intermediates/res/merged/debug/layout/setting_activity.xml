@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="#eeeeee"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:background="#19b4ff"
+                  android:layout_height="50dp">
+
+        <ImageView android:layout_width="match_parent"
+                   android:layout_weight="4"
+                   android:id="@+id/setting_back"
+                   android:clickable="true"
+                   android:background="@drawable/back_bt_bg"
+                   android:layout_height="match_parent"/>
+        <TextView android:layout_width="match_parent"
+                  android:layout_weight="1"
+                  android:text="设置"
+                  android:textColor="#ffffff"
+                  android:textSize="25dp"
+                  android:gravity="center"
+                  android:layout_height="match_parent"/>
+        <TextView android:layout_width="match_parent"
+                  android:layout_weight="4"
+                  android:layout_height="match_parent"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@drawable/bottom_title_box"
+        android:layout_height="5dp"/>
+
+    <TextView android:layout_width="match_parent" android:layout_height="10dp"/>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:clickable="true"
+                    android:id="@+id/delete_"
+                    android:background="@drawable/collects_listview_bg"
+                    android:layout_height="55dp">
+        <ImageView android:layout_width="55dp"
+                   android:src="@drawable/delete_"
+                   android:layout_marginLeft="5dp"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginBottom="10dp"
+                   android:layout_marginRight="5dp"
+                   android:layout_height="match_parent"
+                   android:id="@+id/setting_logout_im_"/>
+        <TextView android:layout_width="wrap_content"
+                  android:text="清空缓存"
+                  android:textSize="15dp"
+                  android:gravity="center"
+                  android:textColor="#3d3d3d"
+                  android:layout_height="match_parent"
+                  android:layout_toEndOf="@+id/setting_logout_im_"/>
+        <TextView android:layout_width="wrap_content"
+                  android:id="@+id/delete_text"
+                  android:gravity="center"
+                  android:text="6.75 M"
+                  android:textColor="#848484"
+                  android:textSize="15sp"
+                   android:layout_marginRight="25dp"
+                   android:layout_marginTop="15dp"
+                   android:layout_marginBottom="15dp"
+                   android:layout_height="match_parent"
+                   android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <TextView android:layout_width="match_parent"
+              android:background="@drawable/collects_"
+              android:layout_height="5dp"/>
+    <TextView android:layout_width="match_parent"
+              android:layout_height="5dp"/>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:clickable="true"
+                    android:id="@+id/setting_logout"
+                    android:background="@drawable/collects_listview_bg"
+                    android:layout_height="55dp">
+        <ImageView android:layout_width="55dp"
+                   android:src="@drawable/logout"
+                   android:layout_marginLeft="5dp"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginBottom="10dp"
+                   android:layout_marginRight="5dp"
+                   android:layout_height="match_parent"
+                   android:id="@+id/setting_logout_im"/>
+        <TextView android:layout_width="wrap_content"
+                  android:text="退出登录"
+                  android:textSize="15dp"
+                  android:gravity="center"
+                  android:textColor="#3d3d3d"
+                  android:layout_height="match_parent"
+                  android:layout_toEndOf="@+id/setting_logout_im"/>
+        <ImageView android:layout_width="50dp"
+                   android:layout_marginRight="25dp"
+                   android:layout_marginTop="15dp"
+                   android:layout_marginBottom="15dp"
+                   android:src="@drawable/go"
+                   android:layout_height="match_parent"
+                   android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <TextView android:layout_width="match_parent"
+              android:background="@drawable/collects_"
+              android:layout_height="5dp"/>
+    <TextView android:layout_width="match_parent"
+              android:layout_height="5dp"/>
+</LinearLayout>

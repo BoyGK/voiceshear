@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@drawable/collects_listview_bg"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:layout_height="115dp">
+        <ImageView android:layout_width="155dp"
+                   android:layout_margin="10dp"
+                   android:id="@+id/list_userself_video_bg"
+                   android:layout_height="match_parent"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:layout_height="match_parent">
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:layout_weight="1"
+                          android:layout_height="match_parent">
+                <ImageView android:layout_width="match_parent"
+                           android:layout_weight="1"
+                           android:layout_gravity="center"
+                           android:background="@drawable/top2"
+                           android:layout_height="45dp"/>
+                <TextView android:layout_width="match_parent"
+                          android:layout_weight="1"
+                          android:id="@+id/list_userself_video_num"
+                          android:gravity="center"
+                          android:textSize="25dp"
+                          android:textColor="#0a82ff"
+                          android:layout_height="match_parent"/>
+                <TextView android:layout_width="match_parent"
+                          android:layout_weight="1"
+                          android:id="@+id/list_userself_video_state"
+                          android:textSize="25dp"
+                          android:gravity="center_vertical"
+                          android:textColor="#0a82ff"
+                          android:layout_height="match_parent"/>
+                <ImageView android:layout_width="match_parent"
+                           android:layout_weight="1"
+                           android:src="@drawable/news_bt_bg"
+                           android:clickable="true"
+                           android:layout_margin="10dp"
+                           android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:layout_weight="1"
+                          android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:textColor="#515151"
+                        android:textSize="18sp"
+                        android:id="@+id/user_video_title"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:textColor="#515151"
+                        android:textSize="18sp"
+                        android:id="@+id/user_video_time"
+                        android:gravity="center"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@drawable/collects_"
+        android:layout_height="3dp"/>
+</LinearLayout>
