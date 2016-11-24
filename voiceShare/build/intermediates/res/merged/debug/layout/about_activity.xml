@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ViewFlipper android:layout_width="match_parent"
+                 android:id="@+id/about_image_bg"
+                 android:layout_height="match_parent">
+    </ViewFlipper>
+
+    <TextView android:layout_width="match_parent"
+              android:text="制作人 ： 白国青"
+              android:textColor="#ffffff"
+              android:textSize="25dp"
+              android:gravity="center"
+              android:alpha="0.7"
+              android:layout_height="match_parent"/>
+
+    <ImageView android:layout_width="40dp"
+               android:background="@drawable/back_bt_bg"
+               android:layout_margin="10dp"
+               android:alpha="0.5"
+               android:id="@+id/about_back"
+               android:clickable="true"
+               android:layout_height="40dp"/>
+
+</RelativeLayout>

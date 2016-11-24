@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gkpoter.voiceShare"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="23"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 读取设备信息权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+ <!-- 获取WIFI权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+ <!-- 获取手机任务信息（进程,app列表） -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+ <!-- 拨打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name="com.gkpoter.voiceShare.MyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="com.gkpoter.voiceShare.MyActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.gkpoter.voiceShare.ui.LoginActivity" />
+        <activity android:name="com.gkpoter.voiceShare.ui.ForgetActivity1" />
+        <activity android:name="com.gkpoter.voiceShare.ui.ForgetActivity2" />
+        <activity android:name="com.gkpoter.voiceShare.ui.RegisterActivity1" />
+        <activity android:name="com.gkpoter.voiceShare.ui.RegisterActivity2" />
+        <activity android:name="com.gkpoter.voiceShare.ui.MainActivity" />
+        <activity android:name="com.gkpoter.voiceShare.ui.MainSearchActivity" />
+        <activity android:name="com.gkpoter.voiceShare.ui.MainVideoActivity" />
+        <activity android:name="com.gkpoter.voiceShare.ui.CollectsSearchActivity" />
+        <activity android:name="com.gkpoter.voiceShare.ui.UserActivity" />
+        <activity android:name="com.gkpoter.voiceShare.ui.self.AboutActivity" />
+        <activity android:name="com.gkpoter.voiceShare.ui.self.InformationActivity" />
+        <activity android:name="com.gkpoter.voiceShare.ui.self.MysteriousActivity" />
+        <activity android:name="com.gkpoter.voiceShare.ui.self.NewsBackActivity" />
+        <activity android:name="com.gkpoter.voiceShare.ui.self.SettingActivity" />
+        <activity android:name="com.gkpoter.voiceShare.ui.self.SignatureActivity" />
+        <activity
+            android:name="cn.finalteam.galleryfinal.PhotoSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.finalteam.galleryfinal.PhotoEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.finalteam.galleryfinal.PhotoPreviewActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

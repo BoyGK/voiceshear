@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <tabs>
+        <tab
+            id="@+id/tab_home"
+            icon="@drawable/home1_"
+            title="首页" />
+        <tab
+            id="@+id/tab_hot"
+            icon="@drawable/top1_"
+            title="热度" />
+        <tab
+            id="@+id/tab_collects"
+            icon="@drawable/collect1_"
+            title="关注" />
+        <tab
+            id="@+id/tab_self"
+            icon="@drawable/self1_"
+            title="个人" />
+    </tabs>
+</PreferenceScreen>

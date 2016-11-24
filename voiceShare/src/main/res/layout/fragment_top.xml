@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_margin="0dp"
+                    android:background="#fff"
+                    android:layout_height="215dp">
+        <ViewFlipper android:layout_width="match_parent"
+                     android:id="@+id/top_main_viewFlipper"
+                     android:background="@drawable/top_back_1"
+                     android:layout_height="215dp"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:layout_height="match_parent">
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_weight="1"
+                          android:id="@+id/top_main_lin1"
+                          android:orientation="horizontal"
+                          android:layout_height="match_parent">
+                <TextView android:layout_width="match_parent"
+                          android:text=""
+                          android:id="@+id/top_main_top1_title"
+                          android:textSize="25sp"
+                          android:gravity="center_vertical"
+                          android:paddingLeft="5dp"
+                          android:textColor="#ffffff"
+                          android:layout_weight="1"
+                          android:layout_height="match_parent"/>
+                <ImageView android:layout_width="match_parent"
+                           android:layout_weight="5"
+                           android:src="@drawable/go"
+                           android:padding="25dp"
+                           android:alpha="0.5"
+                           android:layout_height="match_parent"/>
+            </LinearLayout>
+            <TextView android:layout_width="match_parent"
+                      android:background="#828282"
+                      android:alpha="0.1"
+                      android:layout_height="1dp"/>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_weight="1"
+                          android:id="@+id/top_main_lin2"
+                          android:orientation="horizontal"
+                          android:layout_height="match_parent">
+                <TextView android:layout_width="match_parent"
+                          android:text=""
+                          android:id="@+id/top_main_top2_title"
+                          android:textSize="25sp"
+                          android:gravity="center_vertical"
+                          android:paddingLeft="5dp"
+                          android:textColor="#ffffff"
+                          android:layout_weight="1"
+                          android:layout_height="match_parent"/>
+                <ImageView android:layout_width="match_parent"
+                           android:layout_weight="5"
+                           android:src="@drawable/go"
+                           android:padding="25dp"
+                           android:alpha="0.5"
+                           android:layout_height="match_parent"/>
+            </LinearLayout>
+            <TextView android:layout_width="match_parent"
+                      android:background="#828282"
+                      android:alpha="0.1"
+                      android:layout_height="1dp"/>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_weight="1"
+                          android:id="@+id/top_main_lin3"
+                          android:orientation="horizontal"
+                          android:layout_height="match_parent">
+                <TextView android:layout_width="match_parent"
+                          android:text=""
+                          android:id="@+id/top_main_top3_title"
+                          android:textSize="25sp"
+                          android:gravity="center_vertical"
+                          android:paddingLeft="5dp"
+                          android:textColor="#ffffff"
+                          android:layout_weight="1"
+                          android:layout_height="match_parent"/>
+                <ImageView android:layout_width="match_parent"
+                           android:layout_weight="5"
+                           android:src="@drawable/go"
+                           android:padding="25dp"
+                           android:alpha="0.5"
+                           android:layout_height="match_parent"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <!--<LinearLayout android:layout_width="match_parent"-->
+                  <!--android:orientation="horizontal"-->
+                  <!--android:background="#31adff"-->
+                  <!--android:layout_height="43dp">-->
+
+        <!--<TextView android:layout_width="match_parent"-->
+                  <!--android:layout_weight="1"-->
+                  <!--android:id="@+id/top_main_leftText"-->
+                  <!--android:gravity="center"-->
+                  <!--android:textColor="#ffffff"-->
+                  <!--android:text="Year Top"-->
+                  <!--android:textSize="25dp"-->
+                  <!--android:layout_height="match_parent"/>-->
+
+        <!--<TextView android:layout_width="match_parent"-->
+                  <!--android:layout_weight="1"-->
+                  <!--android:id="@+id/top_main_RightText"-->
+                  <!--android:alpha="0.5"-->
+                  <!--android:gravity="center"-->
+                  <!--android:textColor="#ffffff"-->
+                  <!--android:text="Month Top"-->
+                  <!--android:textSize="25dp"-->
+                  <!--android:layout_height="match_parent"/>-->
+
+    <!--</LinearLayout>-->
+
+    <com.roughike.bottombar.BottomBar
+        android:id="@+id/select_top"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#31adff"
+        app:bb_inActiveTabColor="#ffffff"
+        app:bb_showShadow="false"
+        app:bb_activeTabColor="#fd4c43"
+        app:bb_tabXmlResource="@xml/select_top_button" />
+
+    <TextView android:layout_width="match_parent"
+              android:background="@drawable/buttom_box"
+              android:layout_height="3dp"/>
+
+    <android.support.v4.view.ViewPager
+        android:background="#ffffff"
+            android:id="@+id/top_main_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    />
+
+</LinearLayout>

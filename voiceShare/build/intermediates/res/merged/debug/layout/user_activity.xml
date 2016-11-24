@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="#eeeeee"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ImageView android:layout_width="match_parent"
+               android:id="@+id/userself_bg_image"
+               android:layout_height="215dp"/>
+
+    <ImageView android:layout_width="40dp"
+               android:layout_margin="10dp"
+               android:alpha="0.5"
+               android:clickable="true"
+               android:id="@+id/user_main_back"
+               android:background="@drawable/back_bt_bg"
+               android:layout_height="40dp"/>
+    
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:id="@+id/user_main_linearLayout"
+                  android:layout_marginTop="165dp"
+                  android:layout_height="100dp">
+
+        <ImageView android:layout_width="90dp"
+                   android:id="@+id/userself_user_image"
+                   android:layout_margin="10dp"
+                   android:layout_height="match_parent"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:layout_height="match_parent">
+
+            <TextView android:layout_width="match_parent"
+                      android:id="@+id/userself_user_say"
+                      android:clickable="true"
+                      android:gravity="center_vertical"
+                      android:textColor="#ffffff"
+                      android:layout_weight="1" android:layout_height="match_parent"/>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_weight="1"
+                          android:orientation="horizontal"
+                          android:layout_height="match_parent">
+                <TextView android:layout_width="match_parent"
+                          android:id="@+id/userself_user_focuse"
+                          android:layout_weight="1"
+                          android:gravity="center_vertical"
+                          android:textColor="#353535"
+                          android:layout_height="match_parent"/>
+
+                <Button android:layout_width="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="关注"
+                        android:visibility="visible"
+                        android:id="@+id/userself_user_focuse_bt"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/button_log"
+                        android:layout_height="match_parent"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:layout_width="match_parent"
+        android:divider="#00000000"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:scrollbars="none"
+        android:dividerHeight="0dp"
+        android:layout_below="@+id/user_main_linearLayout"
+        android:id="@+id/user_main_listView"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/user_main_linearLayout"
+        android:background="@drawable/collects_"
+        android:layout_height="3dp"/>
+
+</RelativeLayout>

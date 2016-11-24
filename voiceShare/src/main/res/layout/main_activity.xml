@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:background="#eeeeee"
+                android:layout_height="match_parent">
+    <!--android:background="#19b4ff"-->
+
+    <ImageView android:layout_width="match_parent"
+               android:background="@drawable/voiceshare"
+               android:layout_marginTop="-200dp"
+               android:alpha="0.5"
+               android:layout_height="500dp"/>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:id="@+id/main_activity_viewpager"
+        android:layout_above="@+id/bottomBar"
+        android:layout_height="match_parent"/>
+
+    <com.roughike.bottombar.BottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        app:bb_inActiveTabColor="#b4b4b4"
+        app:bb_showShadow="false"
+        app:bb_activeTabColor="#19b4ff"
+        app:bb_tabXmlResource="@xml/bottom_bar" />
+
+</RelativeLayout>

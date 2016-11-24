@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+                android:background="#eeeeee"
+              android:layout_width="match_parent"
+              android:transitionName="shareNames"
+              android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:background="#19b4ff"
+                  android:layout_height="50dp">
+        <ImageView android:layout_width="match_parent"
+                  android:layout_weight="3"
+                   android:id="@+id/signature_back"
+                   android:background="@drawable/back_bt_bg"
+                  android:layout_height="match_parent"/>
+        <TextView android:layout_width="match_parent"
+                  android:layout_weight="1"
+                  android:text="编辑签名"
+                  android:gravity="center"
+                  android:textSize="14sp"
+                  android:textColor="#ffffff"
+                  android:layout_height="match_parent"/>
+        <Button
+            android:layout_width="match_parent"
+            android:text="发布"
+            android:textSize="14sp"
+            android:textColor="#ffffff"
+            android:layout_margin="4dp"
+            android:layout_gravity="center"
+            android:background="@drawable/blue_button_bg"
+            android:layout_weight="3"
+            android:id="@+id/sian_input_up"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@drawable/bottom_title_box"
+        android:layout_height="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="95dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/sian_input_username"
+                android:textSize="16sp"
+                android:textColor="#515151"
+                android:gravity="center_vertical"
+                android:paddingLeft="26dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_weight="2"
+                android:id="@+id/sian_input_textsize"
+                android:textColor="#515151"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/sian_input"
+            android:paddingLeft="20dp"
+            android:hint="(20字以内)"
+            android:maxLength="20"
+            android:textColorHint="#c1c1c1"
+            android:textSize="18sp"
+            android:textColor="#515151"
+            android:background="@null"
+            android:layout_height="50dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/collects_"
+        android:layout_height="5dp"/>
+
+</LinearLayout>

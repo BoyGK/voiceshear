@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="#ffffff"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:background="#19b4ff"
+                  android:layout_height="50dp">
+
+        <ImageView android:layout_width="match_parent"
+                   android:layout_weight="4"
+                   android:clickable="true"
+                   android:id="@+id/self_news_Back_"
+                   android:background="@drawable/back_bt_bg"
+                   android:layout_height="match_parent"/>
+        <TextView android:layout_width="match_parent"
+                  android:layout_weight="1"
+                  android:text="反馈"
+                  android:textColor="#ffffff"
+                  android:textSize="25dp"
+                  android:gravity="center"
+                  android:layout_height="match_parent"/>
+        <TextView android:layout_width="match_parent"
+                  android:layout_weight="4"
+                  android:text="提交"
+                  android:id="@+id/bug_up"
+                  android:clickable="true"
+                  android:gravity="center"
+                  android:textColor="#ffffff"
+                  android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@drawable/bottom_title_box"
+        android:layout_height="5dp"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:layout_height="115dp">
+        <ImageView android:layout_width="115dp"
+                   android:layout_margin="15dp"
+                   android:id="@+id/self_news_Back_upPhoto"
+                   android:background="@drawable/up_news"
+                   android:layout_height="115dp"/>
+        <TextView android:layout_width="match_parent"
+                  android:text="添加图片（选）..."
+                  android:textColor="#828282"
+                  android:gravity="center_vertical"
+                  android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <EditText android:layout_width="match_parent"
+                  android:textColor="#4e4e4e"
+                  android:background="@drawable/edit_bg"
+                  android:id="@+id/bug_text"
+                  android:textSize="25sp"
+                  android:hint="反馈内容..."
+                  android:layout_margin="10dp"
+                  android:layout_height="wrap_content"/>
+        <ProgressBar android:layout_width="100dp"
+                     android:visibility="gone"
+                     android:layout_centerInParent="true"
+                     android:id="@+id/bug_progress"
+                     android:layout_height="100dp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

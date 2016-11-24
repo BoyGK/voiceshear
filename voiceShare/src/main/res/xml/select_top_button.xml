@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <tabs>
+        <tab
+            id="@+id/tab_year"
+            icon="@drawable/timg_"
+            title="YearHot"/>
+        <tab
+            id="@+id/tab_month"
+            icon="@drawable/timg_"
+            title="MonthHot" />
+    </tabs>
+</PreferenceScreen>

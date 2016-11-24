@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="#eeeeee"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:background="#19b4ff"
+                  android:layout_height="50dp">
+        <TextView android:layout_width="match_parent"
+                  android:layout_weight="4"
+                  android:layout_height="match_parent"/>
+        <TextView android:layout_width="match_parent"
+                  android:layout_weight="1"
+                  android:text="关注"
+                  android:gravity="center"
+                  android:textSize="25dp"
+                  android:textColor="#ffffff"
+                  android:layout_height="match_parent"/>
+        <ImageView android:layout_width="match_parent"
+                  android:layout_weight="4"
+                   android:id="@+id/collects_main_search"
+                   android:clickable="true"
+                   android:layout_margin="5dp"
+                  android:src="@drawable/add_friend"
+                  android:layout_height="match_parent"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@drawable/bottom_title_box"
+        android:layout_height="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@drawable/top_white_box"
+        android:layout_height="5dp"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:clickable="true"
+                  android:id="@+id/collects_main_userSelf"
+                  android:background="@drawable/collects_listview_bg"
+                  android:layout_height="75dp">
+        <ImageView android:layout_width="55dp"
+                   android:layout_margin="10dp"
+                   android:id="@+id/collects_main_userImage"
+                   android:layout_height="match_parent"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:layout_height="match_parent">
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:layout_weight="1"
+                          android:gravity="center"
+                          android:layout_height="match_parent">
+                <TextView android:layout_width="match_parent"
+                          android:gravity="center_vertical"
+                          android:id="@+id/collects_main_userName"
+                          android:textColor="#5a5a5a"
+                          android:layout_weight="1"
+                          android:text="Gkpoter"
+                          android:layout_height="match_parent"/>
+                <TextView android:layout_width="match_parent"
+                          android:gravity="center"
+                          android:id="@+id/collects_main_userFocus"
+                          android:textColor="#1f1f1f"
+                          android:layout_weight="1"
+                          android:text="989人已关注"
+                          android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="vertical"
+                          android:layout_weight="1"
+                          android:layout_height="match_parent">
+                <TextView android:layout_width="match_parent"
+                          android:gravity="center_vertical"
+                          android:id="@+id/collects_main_userSignature"
+                          android:textColor="#1f1f1f"
+                          android:text="评论区请禁止评论评论区请禁止评论"
+                          android:layout_height="match_parent"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:layout_width="match_parent"
+              android:background="@drawable/collects_"
+              android:layout_height="10dp"/>
+
+    <ListView
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:divider="#00000000"
+        android:dividerHeight="0dip"
+        android:id="@+id/collects_main_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+            />
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="#f7f7f7"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:background="#19b4ff"
+                  android:layout_height="50dp">
+
+        <Button android:layout_width="match_parent"
+                android:layout_weight="4"
+                android:id="@+id/search_back"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/back_bt_bg"
+                android:layout_height="match_parent"/>
+
+        <EditText android:layout_width="match_parent"
+                  android:layout_weight="1"
+                  android:focusable="true"
+                  android:hint="搜索..."
+                  android:id="@+id/search_edit_data"
+                  android:gravity="center_vertical"
+                  android:paddingLeft="10dp"
+                  android:background="@drawable/search_bg"
+                  android:layout_marginBottom="5dp"
+                  android:layout_marginTop="5dp"
+                  android:layout_height="match_parent"/>
+
+        <Button android:layout_width="match_parent"
+                android:layout_weight="4"
+                android:id="@+id/search_ok"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/search_bt_bg"
+                android:layout_height="match_parent"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@drawable/buttom_box"
+        android:layout_height="5dp"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/listView_main_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+</LinearLayout>

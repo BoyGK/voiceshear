@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\xml\\select_top_button.xml",
+        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\xml\\select_top_button.xml"
+    },
+    {
+        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\xml\\bottom_bar.xml",
+        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\xml\\bottom_bar.xml"
+    }
+]

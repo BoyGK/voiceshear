@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="#ffffff"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_weight="1"
+                    android:layout_height="match_parent">
+
+        <com.shuyu.gsyvideoplayer.video.StandardGSYVideoPlayer
+            android:background="@android:color/transparent"
+            android:id="@+id/video_activity_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="visible"
+        android:layout_weight="0.5"
+        android:id="@+id/video_visible_"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent"
+                        android:background="#e3e3e3"
+                        android:layout_height="45dp">
+
+            <ImageView android:layout_width="40dp"
+                       android:layout_marginLeft="10dp"
+                       android:layout_marginTop="5dp"
+                       android:layout_marginBottom="5dp"
+                       android:background="@drawable/logo"
+                       android:layout_height="match_parent" android:id="@+id/video_main_userImage"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:text="Gkpoter"
+                      android:id="@+id/video_main_userName"
+                      android:textColor="#727272"
+                      android:gravity="center_vertical"
+                      android:textSize="15dp"
+                      android:layout_height="match_parent"
+                      android:layout_toEndOf="@+id/video_main_userImage"/>
+
+            <ImageView
+                android:layout_width="45dp"
+                android:gravity="center"
+                android:src="@drawable/full_video"
+                android:layout_margin="5dp"
+                android:id="@+id/video_activity_full_video"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/video_activity_p"/>
+
+            <TextView android:layout_width="50dp"
+                      android:text="评论"
+                      android:id="@+id/video_activity_p"
+                      android:gravity="center"
+                      android:textColor="#777777"
+                       android:layout_height="match_parent"
+                       android:layout_marginTop="5dp"
+                       android:layout_marginBottom="5dp"
+                       android:layout_marginRight="25dp"
+                       android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                    android:layout_width="match_parent"
+                      android:id="@+id/video_main_newsList"
+                      android:layout_above="@+id/video_main_bottom"
+                      android:layout_height="match_parent">
+            </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:background="#e3e3e3"
+                          android:id="@+id/video_main_bottom"
+                          android:layout_alignParentBottom="true"
+                          android:layout_height="50dp">
+                <EditText android:layout_width="match_parent"
+                          android:id="@+id/video_main_news"
+                          android:layout_weight="2"
+                          android:paddingLeft="10dp"
+                          android:layout_margin="10dp"
+                          android:layout_marginRight="5dp"
+                          android:background="@drawable/search_bg"
+                          android:hint="你想说什么呢..."
+                          android:gravity="center_vertical"
+                          android:layout_height="match_parent"/>
+
+                <TextView android:layout_width="match_parent"
+                          android:layout_weight="6"
+                          android:text="发布"
+                          android:background="@drawable/button_log"
+                          android:layout_marginTop="10dp"
+                          android:layout_marginBottom="10dp"
+                          android:id="@+id/video_main_up_news"
+                          android:clickable="true"
+                          android:textColor="#ffffff"
+                          android:gravity="center"
+                          android:layout_height="match_parent"/>
+
+                <ImageView android:layout_width="match_parent"
+                           android:layout_weight="6"
+                           android:clickable="true"
+                           android:layout_margin="10dp"
+                           android:background="@drawable/top1_"
+                           android:id="@+id/video_main_top"
+                           android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
