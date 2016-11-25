@@ -4,30 +4,35 @@
     api-level="23"
     density="xxhdpi"
     format="7"
-    timestamp="1830210471494303"
+    timestamp="1895911990554868"
     token="-4693175580384663961" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="3153" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="42" />
     <task
         name="verifier"
-        duration="0" />
+        duration="14" />
 
     <artifact
-        location="F:\voiceShare\voiceShare\build\outputs\apk\voiceShare-debug.apk"
-        type="MAIN" />
+        location="F:\voiceShare\voiceShare\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
+        type="DEX" />
 
-    <build timestamp="1830210471494303" >
+    <build timestamp="1894394307713891" >
         <artifact
             location="F:\voiceShare\voiceShare\build\outputs\apk\voiceShare-debug.apk"
             type="MAIN" />
+    </build>
+    <build timestamp="1895911990554868" >
+        <artifact
+            location="F:\voiceShare\voiceShare\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
+            type="DEX" />
     </build>
 
 </instant-run>

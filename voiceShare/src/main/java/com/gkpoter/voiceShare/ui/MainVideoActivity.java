@@ -86,48 +86,52 @@ public class MainVideoActivity extends Activity {
 
     private void play_video() {
         String url = util.getData("video_path","");
-        videoPlayer.setUp(url, true, "");
+        try {
+            videoPlayer.setUp(url, true, "");
 
-        //设置返回键
-        videoPlayer.getBackButton().setVisibility(View.VISIBLE);
+            //设置返回键
+            videoPlayer.getBackButton().setVisibility(View.VISIBLE);
 
-        //设置旋转
-        orientationUtils = new OrientationUtils(this, videoPlayer);
+            //设置旋转
+            orientationUtils = new OrientationUtils(this, videoPlayer);
 
-        //设置全屏按键功能
-        videoPlayer.getFullscreenButton().setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                relativeLayout.setVisibility(View.GONE);
-                orientationUtils.resolveByClick();
-            }
-        });
-        imageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                relativeLayout.setVisibility(View.GONE);
-                videoPlayer.getFullscreenButton().setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        orientationUtils.resolveByClick();
-                    }
-                });
-            }
-        });
+            //设置全屏按键功能
+            videoPlayer.getFullscreenButton().setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    relativeLayout.setVisibility(View.GONE);
+                    orientationUtils.resolveByClick();
+                }
+            });
+            imageView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    relativeLayout.setVisibility(View.GONE);
+                    videoPlayer.getFullscreenButton().setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            orientationUtils.resolveByClick();
+                        }
+                    });
+                }
+            });
 
-        //是否可以滑动调整
-        videoPlayer.setIsTouchWiget(true);
+            //是否可以滑动调整
+            videoPlayer.setIsTouchWiget(true);
 
-        //设置返回按键功能
-        videoPlayer.getBackButton().setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onBackPressed();
-            }
-        });
+            //设置返回按键功能
+            videoPlayer.getBackButton().setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    onBackPressed();
+                }
+            });
 
-        //过渡动画
-        initTransition();
+            //过渡动画
+            initTransition();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     private void view(){

@@ -140,13 +140,17 @@ public class MainAdapter extends BaseAdapter{
             public void onClick(View view) {
                 finalViewHolder.layout.setVisibility(View.GONE);
                 finalViewHolder.videoPlayer.setVisibility(View.VISIBLE);
-                String url = data.getVideoData().get(i).getVideoPath();
-                finalViewHolder.videoPlayer.setUp(url, true, "");
-                //设置返回键
-                finalViewHolder.videoPlayer.getBackButton().setVisibility(View.VISIBLE);
-                //是否可以滑动调整
-                finalViewHolder.videoPlayer.setIsTouchWiget(true);
-                finalViewHolder.videoPlayer.startPlayLogic();
+                try {
+                    String url = data.getVideoData().get(i).getVideoPath();
+                    finalViewHolder.videoPlayer.setUp(url, false, "");
+                    //设置返回键
+//                    finalViewHolder.videoPlayer.getBackButton().setVisibility(View.VISIBLE);
+                    //是否可以滑动调整
+//                    finalViewHolder.videoPlayer.setIsTouchWiget(true);
+                    finalViewHolder.videoPlayer.startPlayLogic();
+                }catch(Exception e){
+                    e.printStackTrace();
+                }
             }
         });
 

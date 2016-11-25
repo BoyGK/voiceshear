@@ -18,7 +18,7 @@ public class HttpRequest {
     /**
      * 服务器地,端口号与应用名组成的基本的URL
      * */
-    private static final String BASE_URL = "http://183.175.12.176:6789/";
+    private static final String BASE_URL = "http://www.baiguoqing.com:6789/";
     private static AsyncHttpClient client = new AsyncHttpClient();
 
     /**

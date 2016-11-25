@@ -52,7 +52,6 @@
         <EditText android:layout_width="match_parent"
                   android:hint="用户名:"
                   android:textColorHint="#ffffff"
-                  android:password="true"
                   android:id="@+id/register_2_userName"
                   android:background="@drawable/blue_text_stroke"
                   android:textSize="25dp"
