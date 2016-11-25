@@ -24,6 +24,7 @@ import com.gkpoter.voiceShare.ui.MainSearchActivity;
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
 import com.loopj.android.http.RequestParams;
+import com.shuyu.gsyvideoplayer.GSYVideoPlayer;
 
 import java.util.List;
 
@@ -55,6 +56,7 @@ public class MainFragment extends Fragment {
                 adapter.setData(data);
                 adapter.notifyDataSetChanged();
             }
+            GSYVideoPlayer.releaseAllVideos();
         }
 
         @Override

@@ -1,2 +1,5 @@
+CHANGED,F:\voiceShare\voiceShare\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\gkpoter\voiceShare\ui\MainActivity$override.class
+CHANGED,F:\voiceShare\voiceShare\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\gkpoter\voiceShare\ui\MainActivity$2$override.class
+CHANGED,F:\voiceShare\voiceShare\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\gkpoter\voiceShare\ui\MainActivity$3$override.class
 CHANGED,F:\voiceShare\voiceShare\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
-CHANGED,F:\voiceShare\voiceShare\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\gkpoter\voiceShare\ui\Adapter\MainAdapter$4$override.class
+CHANGED,F:\voiceShare\voiceShare\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\gkpoter\voiceShare\ui\MainActivity$1$override.class

@@ -296,6 +296,7 @@ public class MainVideoActivity extends Activity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        GSYVideoPlayer.releaseAllVideos();
     }
 
     @Override

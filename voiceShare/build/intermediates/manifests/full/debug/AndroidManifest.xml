@@ -25,7 +25,7 @@
     <application
         android:name="com.gkpoter.voiceShare.MyApp"
         android:allowBackup="true"
-        android:icon="@drawable/logo"
+        android:icon="@drawable/icon__"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@android:style/Theme.NoTitleBar" >

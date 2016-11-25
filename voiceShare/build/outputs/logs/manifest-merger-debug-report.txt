@@ -817,7 +817,7 @@ MERGED from [com.android.support:support-compat:24.2.0] F:\voiceShare\voiceShare
 	android:supportsRtl
 		ADDED from [cn.finalteam:galleryfinal:1.4.3] F:\voiceShare\voiceShare\build\intermediates\exploded-aar\cn.finalteam\galleryfinal\1.4.3\AndroidManifest.xml:20:9-35
 	android:icon
-		ADDED from F:\voiceShare\voiceShare\src\main\AndroidManifest.xml:16:18-47
+		ADDED from F:\voiceShare\voiceShare\src\main\AndroidManifest.xml:16:18-49
 	android:allowBackup
 		ADDED from [cn.finalteam:galleryfinal:1.4.3] F:\voiceShare\voiceShare\build\intermediates\exploded-aar\cn.finalteam\galleryfinal\1.4.3\AndroidManifest.xml:19:9-35
 	android:theme

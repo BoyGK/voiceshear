@@ -17,6 +17,7 @@ import com.gkpoter.voiceShare.ui.UserActivity;
 import com.gkpoter.voiceShare.util.DataUtil;
 import com.gkpoter.voiceShare.util.PicassoTransform;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
+import com.shuyu.gsyvideoplayer.GSYVideoPlayer;
 import com.shuyu.gsyvideoplayer.utils.OrientationUtils;
 import com.shuyu.gsyvideoplayer.video.StandardGSYVideoPlayer;
 import com.squareup.picasso.Picasso;
@@ -82,6 +83,7 @@ public class MainAdapter extends BaseAdapter{
             viewHolder.videoPlayer.onVideoPause();
             viewHolder.layout.setVisibility(View.VISIBLE);
             viewHolder.videoPlayer.setVisibility(View.GONE);
+            GSYVideoPlayer.releaseAllVideos();
         }
         touchClick(view,i);
 

@@ -483,7 +483,7 @@ public final class R {
 		public static final int ic_gf_preview = 0x7f020075;
 		public static final int ic_gf_rotate = 0x7f020076;
 		public static final int ic_gf_triangle_arrow = 0x7f020077;
-		public static final int notification_template_icon_bg = 0x7f0200c4;
+		public static final int notification_template_icon_bg = 0x7f0200c5;
 	}
 	public static final class id {
 		public static final int action0 = 0x7f0c0118;

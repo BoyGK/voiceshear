@@ -1,10 +1,14 @@
 package com.gkpoter.voiceShare.ui;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.v4.app.*;
 import android.support.v4.view.ViewPager;
+import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +20,7 @@ import com.gkpoter.voiceShare.viewpagertransformer.*;
 import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.BottomBarTab;
 import com.roughike.bottombar.OnTabSelectListener;
+import com.shuyu.gsyvideoplayer.GSYVideoPlayer;
 
 /**
  * Created by dy on 2016/10/19.
@@ -32,6 +37,8 @@ public class MainActivity extends FragmentActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
+        registerReceiver(mHomeKeyEventReceiver, new IntentFilter(
+                Intent.ACTION_CLOSE_SYSTEM_DIALOGS));
 
         FinishListActivity.getInstance().addActivity(this);
 
@@ -116,6 +123,7 @@ public class MainActivity extends FragmentActivity{
     }
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
+        GSYVideoPlayer.releaseAllVideos();
         if(keyCode == KeyEvent.KEYCODE_BACK){
             Intent intent= new Intent(Intent.ACTION_MAIN);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -125,4 +133,26 @@ public class MainActivity extends FragmentActivity{
         }
         return super.onKeyDown(keyCode, event);
     }
+
+    /**
+     * 监听是否点击了home键将客户端推到后台
+     */
+    private BroadcastReceiver mHomeKeyEventReceiver = new BroadcastReceiver() {
+        String SYSTEM_REASON = "reason";
+        String SYSTEM_HOME_KEY = "homekey";
+        String SYSTEM_HOME_KEY_LONG = "recentapps";
+
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            String action = intent.getAction();
+            if (action.equals(Intent.ACTION_CLOSE_SYSTEM_DIALOGS)) {
+                String reason = intent.getStringExtra(SYSTEM_REASON);
+                if (TextUtils.equals(reason, SYSTEM_HOME_KEY)) {
+                    GSYVideoPlayer.releaseAllVideos();
+                }else if(TextUtils.equals(reason, SYSTEM_HOME_KEY_LONG)){
+                    //表示长按home键,显示最近使用的程序列表
+                }
+            }
+        }
+    };
 }
