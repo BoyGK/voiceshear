@@ -2,6 +2,7 @@ package com.gkpoter.voiceShare.ui;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
@@ -26,7 +27,8 @@ public class MainSearchActivity extends Activity {
     private Button search_bt;
     private EditText search_edit;
 
-    private PullToRefreshListView listView;
+    private ListView listView;
+    private SwipeRefreshLayout swipeRefreshLayout;
     private MainAdapter adapter;
     private MainVideoModel data;
     private boolean FrishKey=true;
@@ -47,6 +49,7 @@ public class MainSearchActivity extends Activity {
                 adapter.notifyDataSetChanged();
                 listView.setAdapter(adapter);
             }
+            swipeRefreshLayout.setRefreshing(false);
         }
     };
 
@@ -61,7 +64,8 @@ public class MainSearchActivity extends Activity {
     }
 
     private void init() {
-        listView= (PullToRefreshListView)findViewById(R.id.listView_main_search);
+        listView= (ListView) findViewById(R.id.listView_main_search);
+        swipeRefreshLayout= (SwipeRefreshLayout) findViewById(R.id.listView_main_search_SwipeRefreshLayout);
         back_left= (Button) findViewById(R.id.search_back);
         search_edit= (EditText) findViewById(R.id.search_edit_data);
         search_bt= (Button) findViewById(R.id.search_ok);
@@ -93,6 +97,16 @@ public class MainSearchActivity extends Activity {
 
             }
         });
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                if("".equals(search_edit.getText().toString() + "")){
+                    swipeRefreshLayout.setRefreshing(false);
+                }else{
+                    getData(search_edit.getText().toString() + "");
+                }
+            }
+        });
     }
 
     private void backMain() {
@@ -117,6 +131,7 @@ public class MainSearchActivity extends Activity {
 
             @Override
             public void onError(String msg) {
+                swipeRefreshLayout.setRefreshing(false);
                 Toast.makeText(getApplicationContext(), msg+"", Toast.LENGTH_SHORT).show();
             }
         });

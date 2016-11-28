@@ -13,9 +13,7 @@ import com.gkpoter.voiceShare.model.MainVideoModel;
 
 import com.gkpoter.voiceShare.ui.UserActivity;
 import com.gkpoter.voiceShare.util.DataUtil;
-import com.gkpoter.voiceShare.util.PhotoCut;
 import com.gkpoter.voiceShare.util.PicassoTransform;
-import com.handmark.pulltorefresh.library.PullToRefreshListView;
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Transformation;
 
@@ -33,7 +31,7 @@ public class TopRightAdapter extends BaseAdapter{
         this.data = data;
     }
 
-    public TopRightAdapter(MainVideoModel data, Context context, PullToRefreshListView listView){
+    public TopRightAdapter(MainVideoModel data, Context context, ListView listView){
         this.data=data;
         this.context=context;
 

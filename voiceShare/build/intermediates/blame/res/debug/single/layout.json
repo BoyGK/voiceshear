@@ -36,12 +36,12 @@
         "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\layout\\design_navigation_item_separator.xml"
     },
     {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_main.xml",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\layout\\fragment_main.xml"
-    },
-    {
         "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
         "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_main.xml",
+        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\layout\\fragment_main.xml"
     },
     {
         "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu.xml",
@@ -64,12 +64,12 @@
         "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\cn.finalteam\\galleryfinal\\1.4.3\\res\\layout\\gf_adapter_folder_list_item.xml"
     },
     {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
-        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_screen_simple.xml"
-    },
-    {
         "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\layout\\bb_bottom_bar_item_shifting.xml",
         "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.roughike\\bottom-bar\\2.0.2\\res\\layout\\bb_bottom_bar_item_shifting.xml"
+    },
+    {
+        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_screen_simple.xml"
     },
     {
         "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\layout\\bb_bottom_bar_item_container_tablet.xml",
@@ -140,12 +140,12 @@
         "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
     },
     {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
-        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\layout\\design_navigation_item_header.xml"
-    },
-    {
         "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\layout\\user_activity.xml",
         "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\layout\\user_activity.xml"
+    },
+    {
+        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
+        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\layout\\design_navigation_item_header.xml"
     },
     {
         "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_self.xml",

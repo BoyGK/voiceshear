@@ -91,14 +91,19 @@
               android:background="@drawable/collects_"
               android:layout_height="10dp"/>
 
-    <ListView
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:divider="#00000000"
-        android:dividerHeight="0dip"
-        android:id="@+id/collects_main_listView"
+    <android.support.v4.widget.SwipeRefreshLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-            />
+        android:id="@+id/collects_main_listView_SwipeRefreshLayout"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:divider="#00000000"
+            android:dividerHeight="0dip"
+            android:id="@+id/collects_main_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
 
 </LinearLayout>

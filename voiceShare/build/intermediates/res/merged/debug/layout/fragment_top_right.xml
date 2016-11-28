@@ -5,21 +5,37 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
-    <com.handmark.pulltorefresh.library.PullToRefreshListView
+    <!--<com.handmark.pulltorefresh.library.PullToRefreshListView-->
+            <!--android:id="@+id/top_rightList"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:fadingEdge="none"-->
+            <!--android:divider="#00000000"-->
+            <!--android:dividerHeight="0dip"-->
+            <!--android:listSelector="@android:color/transparent"-->
+            <!--android:scrollbars="none"-->
+            <!--android:fastScrollEnabled="false"-->
+            <!--android:footerDividersEnabled="false"-->
+            <!--android:headerDividersEnabled="false"-->
+            <!--android:smoothScrollbar="true"/>-->
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/top_rightList_SwipeRefreshLayout"
+        android:layout_height="match_parent">
+        <ListView
             android:id="@+id/top_rightList"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="5dp"
-
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fadingEdge="none"
             android:divider="#00000000"
             android:dividerHeight="0dip"
             android:listSelector="@android:color/transparent"
-            android:scrollbars="none"
-            android:fastScrollEnabled="false"
-            android:footerDividersEnabled="false"
-            android:headerDividersEnabled="false"
-            android:smoothScrollbar="true"/>
+            android:scrollbars="none"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
 
 </LinearLayout>

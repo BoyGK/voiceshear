@@ -3,12 +3,14 @@ package com.gkpoter.voiceShare.ui;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.Toast;
 import com.gkpoter.voiceShare.R;
 import com.gkpoter.voiceShare.listener.Listener;
@@ -25,7 +27,8 @@ import com.loopj.android.http.RequestParams;
 public class CollectsSearchActivity extends Activity {
     private Button back_left,search_;
     private EditText edit_;
-    private PullToRefreshListView listView;
+    private ListView listView;
+    private SwipeRefreshLayout swipeRefreshLayout;
     private UserFocusModel data;
     private CollectsAdapter adapter;
 
@@ -38,6 +41,7 @@ public class CollectsSearchActivity extends Activity {
         public void back() {
             adapter=new CollectsAdapter(data,getApplication());
             listView.setAdapter(adapter);
+            swipeRefreshLayout.setRefreshing(false);
         }
     };
     @Override
@@ -80,6 +84,16 @@ public class CollectsSearchActivity extends Activity {
 
             }
         });
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                if(!"".equals(edit_.getText().toString()+"")) {
+                    getData(edit_.getText().toString() + "");
+                }else{
+                    swipeRefreshLayout.setRefreshing(false);
+                }
+            }
+        });
     }
 
     private void getData(String s) {
@@ -95,6 +109,7 @@ public class CollectsSearchActivity extends Activity {
 
             @Override
             public void onError(String msg) {
+                swipeRefreshLayout.setRefreshing(false);
                 Toast.makeText(getApplicationContext(),msg + "", Toast.LENGTH_SHORT).show();
             }
         });
@@ -103,7 +118,8 @@ public class CollectsSearchActivity extends Activity {
     private void init() {
         back_left= (Button) findViewById(R.id.search_back);
         edit_= (EditText) findViewById(R.id.search_edit_data);
-        listView= (PullToRefreshListView) findViewById(R.id.listView_main_search);
+        listView= (ListView) findViewById(R.id.listView_main_search);
+        swipeRefreshLayout= (SwipeRefreshLayout) findViewById(R.id.listView_main_search_SwipeRefreshLayout);
         search_= (Button) findViewById(R.id.search_ok);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

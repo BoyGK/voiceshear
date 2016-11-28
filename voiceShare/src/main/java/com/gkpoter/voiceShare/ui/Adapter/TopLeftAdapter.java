@@ -37,7 +37,7 @@ public class TopLeftAdapter extends BaseAdapter{
         this.data = data;
     }
 
-    public TopLeftAdapter(MainVideoModel data, Context context, PullToRefreshListView listView){
+    public TopLeftAdapter(MainVideoModel data, Context context, ListView listView){
         this.data=data;
         this.context=context;
     }

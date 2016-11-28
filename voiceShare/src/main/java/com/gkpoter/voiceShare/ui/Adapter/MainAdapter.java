@@ -31,17 +31,19 @@ import java.util.TimerTask;
  */
 public class MainAdapter extends BaseAdapter{
 
-    private int mStart, mEnd;
     private MainVideoModel data;
     private Context context;
-    public boolean mFirstIn;
-    OrientationUtils orientationUtils;
 
     public void setData(MainVideoModel data) {
         this.data = data;
     }
 
     public MainAdapter(MainVideoModel data, Context context, PullToRefreshListView listView){
+        this.data=data;
+        this.context=context;
+    }
+
+    public MainAdapter(MainVideoModel data, Context context, ListView listView){
         this.data=data;
         this.context=context;
     }

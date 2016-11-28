@@ -8,6 +8,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.v4.app.Fragment;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -47,6 +48,7 @@ public class CollectsFragment extends Fragment {
 
     private ImageView searchFriend;
     private ListView listView;
+    private SwipeRefreshLayout swipeRefreshLayout;
     private UserFocusModel data;
     private CollectsAdapter adapter;
     private LinearLayout userSelf;
@@ -77,6 +79,7 @@ public class CollectsFragment extends Fragment {
         public void back() {
             adapter=new CollectsAdapter(data,getActivity());
             listView.setAdapter(adapter);
+            swipeRefreshLayout.setRefreshing(false);
         }
     };
 
@@ -92,13 +95,14 @@ public class CollectsFragment extends Fragment {
 
         init();
         viewClick();
-        //MainActivity.refashListener=refashListener;
+
         UserActivity.refashListener=refashListener;
         SelfFragment.signRefsh=signRefsh;
     }
 
     private void viewClick() {
         listView= (ListView) getView().findViewById(R.id.collects_main_listView);
+        swipeRefreshLayout= (SwipeRefreshLayout) getView().findViewById(R.id.collects_main_listView_SwipeRefreshLayout);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
@@ -114,6 +118,12 @@ public class CollectsFragment extends Fragment {
                 util_.saveData("user_logday",data.getFocus().get(i).getLogDay()+"");
                 util_.saveData("user_level",data.getFocus().get(i).getLevel()+"");
                 startActivity(new Intent(getActivity(), UserActivity.class));
+            }
+        });
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                getData();
             }
         });
         searchFriend.setOnClickListener(new View.OnClickListener() {
@@ -149,6 +159,7 @@ public class CollectsFragment extends Fragment {
 
             @Override
             public void onError(String msg) {
+                swipeRefreshLayout.setRefreshing(false);
                 Toast.makeText(getActivity(),msg + "", Toast.LENGTH_SHORT).show();
             }
         });
@@ -157,7 +168,8 @@ public class CollectsFragment extends Fragment {
     private void selfClick() {
         util = new DataUtil("user", getActivity());
         pictureUtil = new PictureUtil();
-        Bitmap bitmap = pictureUtil.getPicture(Environment.getExternalStorageDirectory().getPath()+"/voiceshare", util.getData("user_name", "")+"_voiceShare");
+        Bitmap bitmap = pictureUtil.getPicture(Environment.getExternalStorageDirectory().getPath()
+                +"/voiceshare", util.getData("user_name", "")+"_voiceShare");
         if (bitmap == null) {
             new photoAsyncTask(userImage).execute(util.getData("user_photo", ""));
         } else {
@@ -234,7 +246,8 @@ public class CollectsFragment extends Fragment {
                     e.printStackTrace();
                 }
             }
-            pictureUtil.savePicture(bitmap,Environment.getExternalStorageDirectory().getPath()+"/voiceshare",util.getData("user_name","")+"_voiceShare");
+            pictureUtil.savePicture(bitmap,Environment.getExternalStorageDirectory().getPath()
+                    +"/voiceshare",util.getData("user_name","")+"_voiceShare");
             if(key) {
                 this.imageView.setImageBitmap(PhotoCut.toRoundBitmap(bitmap));
             }else{

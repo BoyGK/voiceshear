@@ -3,6 +3,7 @@ package com.gkpoter.voiceShare.ui.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -28,7 +29,8 @@ import java.util.List;
  * Created by dy on 2016/10/20.
  */
 public class TopFragmentRight extends Fragment {
-    private PullToRefreshListView listView;
+    private ListView listView;
+    private SwipeRefreshLayout swipeRefreshLayout;
     private MainVideoModel data;
     private TopRightAdapter adapter;
     private boolean FrishKey=true;
@@ -42,10 +44,12 @@ public class TopFragmentRight extends Fragment {
             if(FrishKey) {
                 adapter=new TopRightAdapter(data,getActivity(),listView);
                 listView.setAdapter(adapter);
-                listView.onRefreshComplete();
+//                listView.onRefreshComplete();
+                swipeRefreshLayout.setRefreshing(false);
                 FrishKey=false;
             }else{
-                listView.onRefreshComplete();
+//                listView.onRefreshComplete();
+                swipeRefreshLayout.setRefreshing(false);
                 adapter.setData(data);
                 adapter.notifyDataSetChanged();
             }
@@ -82,21 +86,28 @@ public class TopFragmentRight extends Fragment {
                 startActivity(new Intent(getActivity(), MainVideoActivity.class));
             }
         });
-        listView.setOnRefreshListener(new PullToRefreshBase.OnRefreshListener2<ListView>() {
+//        listView.setOnRefreshListener(new PullToRefreshBase.OnRefreshListener2<ListView>() {
+//            @Override
+//            public void onPullDownToRefresh(PullToRefreshBase<ListView> refreshView) {
+//                getData();
+//            }
+//
+//            @Override
+//            public void onPullUpToRefresh(PullToRefreshBase<ListView> refreshView) {
+//            }
+//        });
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
-            public void onPullDownToRefresh(PullToRefreshBase<ListView> refreshView) {
+            public void onRefresh() {
                 getData();
-            }
-
-            @Override
-            public void onPullUpToRefresh(PullToRefreshBase<ListView> refreshView) {
             }
         });
 
     }
 
     private void init() {
-        listView= (PullToRefreshListView) getView().findViewById(R.id.top_rightList);
+        listView= (ListView) getView().findViewById(R.id.top_rightList);
+        swipeRefreshLayout= (SwipeRefreshLayout) getView().findViewById(R.id.top_rightList_SwipeRefreshLayout);
         getData();
     }
 
@@ -113,7 +124,8 @@ public class TopFragmentRight extends Fragment {
 
             @Override
             public void onError(String msg) {
-                listView.onRefreshComplete();
+//                listView.onRefreshComplete();
+                swipeRefreshLayout.setRefreshing(false);
                 Toast.makeText(getActivity(), msg+"", Toast.LENGTH_SHORT).show();
             }
         });
