@@ -30,7 +30,7 @@ public class MainActivity extends FragmentActivity{
     private Fragment[] mFragments;
     private FragmentPagerAdapter adapter;
     private ViewPager viewPager;
-    public static RefashListener refashListener;
+    //public static RefashListener refashListener;
     private BottomBar bottomBar;
 
     @Override
@@ -75,9 +75,15 @@ public class MainActivity extends FragmentActivity{
                 //lightMenu(i);
                 switch (i){
                     case 0:bottomBar.selectTabWithId(R.id.tab_home);break;
-                    case 1:bottomBar.selectTabWithId(R.id.tab_hot);break;
-                    case 2:bottomBar.selectTabWithId(R.id.tab_collects);break;
-                    case 3:bottomBar.selectTabWithId(R.id.tab_self);break;
+                    case 1:
+                        GSYVideoPlayer.releaseAllVideos();
+                        bottomBar.selectTabWithId(R.id.tab_hot);break;
+                    case 2:
+                        GSYVideoPlayer.releaseAllVideos();
+                        bottomBar.selectTabWithId(R.id.tab_collects);break;
+                    case 3:
+                        GSYVideoPlayer.releaseAllVideos();
+                        bottomBar.selectTabWithId(R.id.tab_self);break;
                 }
             }
 
@@ -108,13 +114,16 @@ public class MainActivity extends FragmentActivity{
                         viewPager.setCurrentItem(0);
                         break;
                     case R.id.tab_hot:
+                        GSYVideoPlayer.releaseAllVideos();
                         viewPager.setCurrentItem(1);
                         break;
                     case R.id.tab_collects:
+                        GSYVideoPlayer.releaseAllVideos();
                         viewPager.setCurrentItem(2);
-                        refashListener.back();
+                        //refashListener.back();
                         break;
                     case R.id.tab_self:
+                        GSYVideoPlayer.releaseAllVideos();
                         viewPager.setCurrentItem(3);
                         break;
                 }

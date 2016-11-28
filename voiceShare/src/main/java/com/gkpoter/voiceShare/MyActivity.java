@@ -24,6 +24,7 @@ public class MyActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
+        FinishListActivity.getInstance().addActivity(this);
         init();
         new Thread(){
             @Override

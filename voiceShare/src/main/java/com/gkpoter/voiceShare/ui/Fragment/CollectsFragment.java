@@ -92,7 +92,7 @@ public class CollectsFragment extends Fragment {
 
         init();
         viewClick();
-        MainActivity.refashListener=refashListener;
+        //MainActivity.refashListener=refashListener;
         UserActivity.refashListener=refashListener;
         SelfFragment.signRefsh=signRefsh;
     }
@@ -133,7 +133,7 @@ public class CollectsFragment extends Fragment {
         signature= (TextView) getView().findViewById(R.id.collects_main_userSignature);
         userSelf= (LinearLayout) getView().findViewById(R.id.collects_main_userSelf);
         selfClick();
-        //getData();
+        getData();
     }
 
     public void getData() {

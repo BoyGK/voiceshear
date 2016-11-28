@@ -44,6 +44,8 @@ public class MainSearchActivity extends Activity {
                 FrishKey=false;
             }else{
                 adapter.setData(data);
+                adapter.notifyDataSetChanged();
+                listView.setAdapter(adapter);
             }
         }
     };

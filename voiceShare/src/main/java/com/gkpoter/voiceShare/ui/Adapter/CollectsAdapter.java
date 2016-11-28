@@ -6,6 +6,8 @@ import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.AsyncTask;
 import android.os.Environment;
+import android.os.Handler;
+import android.os.Message;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,6 +19,7 @@ import com.gkpoter.voiceShare.util.DataUtil;
 import com.gkpoter.voiceShare.util.PhotoCut;
 import com.gkpoter.voiceShare.util.PictureUtil;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
+import com.squareup.picasso.Picasso;
 
 import java.io.File;
 import java.io.IOException;
@@ -24,6 +27,8 @@ import java.io.InputStream;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 
 /**
  * Created by dy on 2016/10/21.
@@ -61,7 +66,7 @@ public class CollectsAdapter extends BaseAdapter {
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
-        util = new DataUtil("user_focus", context);
+        //util = new DataUtil("user_focus", context);
         pictureUtil = new PictureUtil();
         ViewHolder viewHolder = null;
         if (view == null){
@@ -76,13 +81,30 @@ public class CollectsAdapter extends BaseAdapter {
             viewHolder = (ViewHolder) view.getTag();
         }
 
-        Bitmap bitmap = pictureUtil.getPicture(Environment.getExternalStorageDirectory().getPath()+"/voiceshare", util.getData("user_name", "")+"_voiceShare");
-        if (bitmap == null) {
-            new photoAsyncTask(viewHolder.userImage).execute(util.getData("user_photo", ""));
-        } else {
-            BitmapDrawable bd= new BitmapDrawable(bitmap);
-            viewHolder.userImage.setBackground(bd);
-        }
+        final Timer timer = new Timer();
+        final ViewHolder finalViewHolder1 = viewHolder;
+        final int i_=i;
+        final Handler myHandler = new Handler(){
+            @Override
+            public void handleMessage(Message msg) {
+                if(msg.what == 1) {
+                    if(finalViewHolder1.userImage.getWidth()!=0) {
+                        Picasso.with(context).load(data.getFocus().get(i_).getUserPhoto()+"")
+                                .resize(finalViewHolder1.userImage.getWidth(), finalViewHolder1.userImage.getHeight()).into(finalViewHolder1.userImage);
+                        timer.cancel();
+                    }
+                }
+            }
+        };
+        TimerTask task = new TimerTask(){
+            public void run() {
+                Message message = new Message();
+                message.what = 1;
+                myHandler.sendMessage(message);
+            }
+        };
+        //延迟每次延迟10 毫秒 隔1秒执行一次
+        timer.schedule(task,10,100);
         viewHolder.userName.setText(data.getFocus().get(i).getUserName());
         viewHolder.userfocus.setText(data.getFocus().get(i).getFocus()+" 人已关注");
         if("".equals(data.getFocus().get(i).getSignature()+"")){
@@ -138,15 +160,15 @@ public class CollectsAdapter extends BaseAdapter {
         @Override
         protected void onPostExecute(Bitmap bitmap) {
             super.onPostExecute(bitmap);
-            File file=new File(Environment.getExternalStorageDirectory().getPath()+"/voiceshare");
-            if(!file.isFile()){
-                try {
-                    file.mkdirs();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-            pictureUtil.savePicture(bitmap,Environment.getExternalStorageDirectory().getPath()+"/voiceshare",util.getData("user_name","")+"_voiceShare");
+//            File file=new File(Environment.getExternalStorageDirectory().getPath()+"/voiceshare");
+//            if(!file.isFile()){
+//                try {
+//                    file.mkdirs();
+//                } catch (Exception e) {
+//                    e.printStackTrace();
+//                }
+//            }
+//            pictureUtil.savePicture(bitmap,Environment.getExternalStorageDirectory().getPath()+"/voiceshare",util.getData("user_name","")+"_voiceShare");
             if(key) {
                 this.imageView.setImageBitmap(PhotoCut.toRoundBitmap(bitmap));
             }else{
