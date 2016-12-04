@@ -17,7 +17,7 @@ public class MyActivity extends Activity {
     /**
      * Called when the activity is first created.
      */
-    private boolean statekey=true;
+    private boolean STATE_KEY=true;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -34,7 +34,7 @@ public class MyActivity extends Activity {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                if(statekey) {
+                if(STATE_KEY) {
                     startActivity(new Intent(getApplicationContext(), LoginActivity.class));
                     finish();
                 }
@@ -54,13 +54,14 @@ public class MyActivity extends Activity {
             loginService.post(getApplicationContext(), "doLogin", params, new Listener() {
                 @Override
                 public void onSuccess(Object object) {
-                    statekey=false;
+                    STATE_KEY=false;
                     save((UserModel) object);
                     startActivity(new Intent(MyActivity.this,MainActivity.class));
                     FinishListActivity.getInstance().exit();
                 }
                 @Override
                 public void onError(String msg) {
+                    STATE_KEY=true;
                     Toast.makeText(MyActivity.this, msg+"", Toast.LENGTH_SHORT).show();
                 }
             });

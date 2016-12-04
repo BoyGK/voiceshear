@@ -3,6 +3,7 @@ package com.gkpoter.voiceShare.ui.Fragment;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -103,6 +104,7 @@ public class CollectsFragment extends Fragment {
     private void viewClick() {
         listView= (ListView) getView().findViewById(R.id.collects_main_listView);
         swipeRefreshLayout= (SwipeRefreshLayout) getView().findViewById(R.id.collects_main_listView_SwipeRefreshLayout);
+        swipeRefreshLayout.setColorSchemeColors(Color.rgb(0x19,0xb4,0xff));
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {

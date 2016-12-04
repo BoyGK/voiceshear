@@ -1,6 +1,7 @@
 package com.gkpoter.voiceShare.ui;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.text.Editable;
@@ -66,6 +67,7 @@ public class MainSearchActivity extends Activity {
     private void init() {
         listView= (ListView) findViewById(R.id.listView_main_search);
         swipeRefreshLayout= (SwipeRefreshLayout) findViewById(R.id.listView_main_search_SwipeRefreshLayout);
+        swipeRefreshLayout.setColorSchemeColors(Color.rgb(0x19,0xb4,0xff));
         back_left= (Button) findViewById(R.id.search_back);
         search_edit= (EditText) findViewById(R.id.search_edit_data);
         search_bt= (Button) findViewById(R.id.search_ok);

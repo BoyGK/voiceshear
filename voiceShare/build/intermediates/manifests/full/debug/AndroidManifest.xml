@@ -14,12 +14,9 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <!-- 读取设备信息权限 -->
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
- <!-- 获取WIFI权限 -->
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
- <!-- 获取手机任务信息（进程,app列表） -->
-    <uses-permission android:name="android.permission.GET_TASKS" />
- <!-- 拨打电话 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 获取WIFI权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 获取手机任务信息（进程,app列表） -->
+    <uses-permission android:name="android.permission.GET_TASKS" /> <!-- 拨打电话 -->
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application

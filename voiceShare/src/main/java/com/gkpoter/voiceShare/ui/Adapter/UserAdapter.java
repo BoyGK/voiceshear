@@ -31,7 +31,7 @@ public class UserAdapter extends BaseAdapter{
     private VideoModel data;
     private Context context;
 
-    public UserAdapter(VideoModel data, Context context, PullToRefreshListView listView){
+    public UserAdapter(VideoModel data, Context context){
         this.data=data;
         this.context=context;
     }

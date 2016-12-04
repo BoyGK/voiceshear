@@ -4,10 +4,12 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.util.Log;
 import android.view.View;
 import android.widget.*;
@@ -41,7 +43,8 @@ public class UserActivity extends Activity {
     private ImageView image_bg,image_user;
     private TextView focus,say;
     private VideoModel data;
-    private PullToRefreshListView listView;
+    private ListView listView;
+    private SwipeRefreshLayout swipeRefreshLayout;
     private UserAdapter adapter;
     private Button bt;
 
@@ -57,8 +60,9 @@ public class UserActivity extends Activity {
     private CallBack call=new CallBack() {
         @Override
         public void back() {
-            adapter=new UserAdapter(data,getApplication(),listView);
+            adapter=new UserAdapter(data,getApplication());
             listView.setAdapter(adapter);
+            swipeRefreshLayout.setRefreshing(false);
         }
     };
 
@@ -90,7 +94,9 @@ public class UserActivity extends Activity {
         initView();
 
         backtoCollects= (ImageView) findViewById(R.id.user_main_back);
-        listView= (PullToRefreshListView) findViewById(R.id.user_main_listView);
+        listView= (ListView) findViewById(R.id.user_main_listView);
+        swipeRefreshLayout= (SwipeRefreshLayout) findViewById(R.id.user_main_listView_SwipeRefreshLayout);
+        swipeRefreshLayout.setColorSchemeColors(Color.rgb(0x19,0xb4,0xff));
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -105,6 +111,12 @@ public class UserActivity extends Activity {
                 util.saveData("user_image",util_.getData("user_photo",""));
                 util.saveData("user_name",util_.getData("user_name",""));
                 startActivity(new Intent(getApplicationContext(),MainVideoActivity.class));
+            }
+        });
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                getData();
             }
         });
     }
@@ -224,6 +236,7 @@ public class UserActivity extends Activity {
 
             @Override
             public void onError(String msg) {
+                swipeRefreshLayout.setRefreshing(false);
                 Toast.makeText(getApplicationContext(),msg + "", Toast.LENGTH_SHORT).show();
             }
         });

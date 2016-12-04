@@ -1,6 +1,7 @@
 package com.gkpoter.voiceShare.ui.Fragment;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -108,6 +109,7 @@ public class TopFragmentRight extends Fragment {
     private void init() {
         listView= (ListView) getView().findViewById(R.id.top_rightList);
         swipeRefreshLayout= (SwipeRefreshLayout) getView().findViewById(R.id.top_rightList_SwipeRefreshLayout);
+        swipeRefreshLayout.setColorSchemeColors(Color.rgb(0x19,0xb4,0xff));
         getData();
     }
 

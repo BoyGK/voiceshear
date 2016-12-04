@@ -40,12 +40,12 @@
         "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.roughike\\bottom-bar\\2.0.2\\res\\drawable\\bb_bottom_bar_top_shadow.xml"
     },
     {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
-        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_ratingbar_indicator_material.xml"
-    },
-    {
         "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable\\video_loading.xml",
         "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.shuyu\\gsyVideoPlayer\\1.1.7\\res\\drawable\\video_loading.xml"
+    },
+    {
+        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_ratingbar_indicator_material.xml"
     },
     {
         "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",

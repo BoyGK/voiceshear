@@ -1,39 +1,43 @@
 [
     {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_star_half_black_36dp.png",
-        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_36dp.png"
+        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png",
+        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
     {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\news_self.png",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\news_self.png"
+        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_star_half_black_36dp.png",
+        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_36dp.png"
     },
     {
         "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",
         "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\voiceshare.png",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\voiceshare.png"
+        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\welcome.jpg",
+        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\welcome.jpg"
     },
     {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_gf_clear.png",
-        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\cn.finalteam\\galleryfinal\\1.4.3\\res\\drawable-xhdpi\\ic_gf_clear.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\settingicon.png",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\settingicon.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\top1.png",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\top1.png"
+        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png",
+        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
         "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png",
         "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\back_left.png",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\back_left.png"
+        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png",
+        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png",
+        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png",
+        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_divider_mtrl_alpha.9.png",
+        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
     },
     {
         "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",
@@ -44,24 +48,20 @@
         "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\top_back_1.jpg"
     },
     {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\self2.png",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\self2.png"
+        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png",
+        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png"
     },
     {
         "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
         "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
     },
     {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\add_friend.png",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\add_friend.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_gf_crop.png",
-        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\cn.finalteam\\galleryfinal\\1.4.3\\res\\drawable-xhdpi\\ic_gf_crop.png"
-    },
-    {
         "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\default_ptr_rotate.png",
         "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\voiceShare\\library\\unspecified\\res\\drawable-xhdpi-v4\\default_ptr_rotate.png"
+    },
+    {
+        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_rating_star_on_mtrl_alpha.png",
+        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_btn_rating_star_on_mtrl_alpha.png"
     },
     {
         "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png",
@@ -72,14 +72,6 @@
         "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\play_video.png",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\play_video.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_qq.png",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\ic_qq.png"
-    },
-    {
         "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_moreoverflow_mtrl_alpha.png",
         "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_ic_menu_moreoverflow_mtrl_alpha.png"
     },
@@ -88,20 +80,24 @@
         "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_ic_search_api_mtrl_alpha.png"
     },
     {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\home2.png",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\home2.png"
+        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\indicator_arrow.png",
+        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\voiceShare\\library\\unspecified\\res\\drawable-xhdpi-v4\\indicator_arrow.png"
     },
     {
         "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\top_back_3.jpg",
         "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\top_back_3.jpg"
     },
     {
+        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\about_2.jpg",
+        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\about_2.jpg"
+    },
+    {
         "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png",
         "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\about_2.jpg",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\about_2.jpg"
+        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\blue_fire.jpg",
+        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\blue_fire.jpg"
     },
     {
         "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png",
@@ -112,24 +108,20 @@
         "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
     },
     {
+        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\userimage.jpg",
+        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\userimage.jpg"
+    },
+    {
         "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_000.png",
         "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
     },
     {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\top2.png",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\top2.png"
+        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png",
+        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\back_left_.png",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\back_left_.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\full_video.png",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\full_video.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\gf_ic_preview.png",
-        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\cn.finalteam\\galleryfinal\\1.4.3\\res\\drawable-xhdpi\\gf_ic_preview.png"
+        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
+        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
         "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png",
@@ -140,28 +132,64 @@
         "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_ic_star_black_36dp.png"
     },
     {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\about_logo.png",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\about_logo.png"
+        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png",
+        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_gf_camera.png",
-        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\cn.finalteam\\galleryfinal\\1.4.3\\res\\drawable-xhdpi\\ic_gf_camera.png"
+        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png",
+        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\up_news.jpg",
+        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\up_news.jpg"
     },
     {
         "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
         "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_gf_done.png",
-        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\cn.finalteam\\galleryfinal\\1.4.3\\res\\drawable-xhdpi\\ic_gf_done.png"
+        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_star_black_16dp.png",
+        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
+        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png",
+        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
+        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_pressed_holo_light.9.png",
+        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png",
+        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png",
+        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\friendimage.jpg",
+        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\friendimage.jpg"
+    },
+    {
+        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\about_1.jpg",
+        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\about_1.jpg"
+    },
+    {
+        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_voice_search_api_mtrl_alpha.png",
+        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_ic_voice_search_api_mtrl_alpha.png"
     },
     {
         "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_clear_mtrl_alpha.png",
         "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_ic_clear_mtrl_alpha.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_gf_crop_tile.png",
-        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\cn.finalteam\\galleryfinal\\1.4.3\\res\\drawable-xhdpi\\ic_gf_crop_tile.png"
     },
     {
         "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
@@ -176,8 +204,12 @@
         "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\userself_bg.jpg"
     },
     {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\back_news.png",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\back_news.png"
+        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\user_top.jpeg",
+        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\user_top.jpeg"
+    },
+    {
+        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",
+        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
         "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\default_ptr_flip.png",
@@ -186,6 +218,10 @@
     {
         "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png",
         "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_go_search_api_mtrl_alpha.png",
+        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_ic_go_search_api_mtrl_alpha.png"
     },
     {
         "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\top_back_2.jpg",
@@ -206,214 +242,6 @@
     {
         "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",
         "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\up_video.png",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\up_video.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png",
-        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\news.png",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\news.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_launcher.png",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_gf_back.png",
-        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\cn.finalteam\\galleryfinal\\1.4.3\\res\\drawable-xhdpi\\ic_gf_back.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\welcome.jpg",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\welcome.jpg"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\news_.png",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\news_.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png",
-        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png",
-        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png",
-        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png",
-        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\self_mysterious.png",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\self_mysterious.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_delete_photo.png",
-        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\cn.finalteam\\galleryfinal\\1.4.3\\res\\drawable-xhdpi\\ic_delete_photo.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_divider_mtrl_alpha.9.png",
-        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\logout.png",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\logout.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\delete_.png",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\delete_.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png",
-        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\collect1.png",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\collect1.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_gf_rotate.png",
-        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\cn.finalteam\\galleryfinal\\1.4.3\\res\\drawable-xhdpi\\ic_gf_rotate.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_rating_star_on_mtrl_alpha.png",
-        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_btn_rating_star_on_mtrl_alpha.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\indicator_arrow.png",
-        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\voiceShare\\library\\unspecified\\res\\drawable-xhdpi-v4\\indicator_arrow.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\logo.png",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\logo.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\blue_fire.jpg",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\blue_fire.jpg"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\search.png",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\search.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\userimage.jpg",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\userimage.jpg"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\icon__.png",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\icon__.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png",
-        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
-        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png",
-        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png",
-        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\up_news.jpg",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\up_news.jpg"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_star_black_16dp.png",
-        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_ic_star_black_16dp.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
-        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png",
-        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_gf_triangle_arrow.png",
-        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\cn.finalteam\\galleryfinal\\1.4.3\\res\\drawable-xhdpi\\ic_gf_triangle_arrow.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
-        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\go.png",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\go.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png",
-        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_pressed_holo_light.9.png",
-        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_light.9.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png",
-        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\friendimage.jpg",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\friendimage.jpg"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\search_.png",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\search_.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\about_1.jpg",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\about_1.jpg"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_voice_search_api_mtrl_alpha.png",
-        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_ic_voice_search_api_mtrl_alpha.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\user_top.jpeg",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\user_top.jpeg"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",
-        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\self1.png",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\self1.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\collect2.png",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\collect2.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_go_search_api_mtrl_alpha.png",
-        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable-xhdpi-v4\\abc_ic_go_search_api_mtrl_alpha.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_weibo.png",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\ic_weibo.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_weixin.png",
-        "source": "F:\\voiceShare\\voiceShare\\src\\main\\res\\drawable-xhdpi\\ic_weixin.png"
-    },
-    {
-        "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_gf_default_photo.png",
-        "source": "F:\\voiceShare\\voiceShare\\build\\intermediates\\exploded-aar\\cn.finalteam\\galleryfinal\\1.4.3\\res\\drawable-xhdpi\\ic_gf_default_photo.png"
     },
     {
         "merged": "F:\\voiceShare\\voiceShare\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png",
